@@ -13,6 +13,7 @@
   <link rel=icon href=img/favicon.png sizes="16x16" type="image/png">
   <link rel=icon href=img/favicon.ico sizes="32x32" type="image/vnd.microsoft.icon">
   <link rel=icon href=img/favicon.svg sizes="any" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&amp;subset=cyrillic" rel="stylesheet">   
   <link rel="stylesheet" href="css/style.css">
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -22,14 +23,14 @@
 <body>
   <div class="calc">
     <div class="tabs">
-      <div class="tab-item  tab-item-active">Лэндинг</div>
-      <div class="tab-item">Многостраничник</div>
+      <div class="tab__item  tab__item-left  tab-item-active">Лэндинг</div>
+      <div class="tab__item  tab__item-right">Многостраничник</div>
     </div>
     <div class="calc-row  calc-row-active">
       <p class="row__title">Количество блоков</p>
       <input type="number" class="calc__input" id="count-bloks">
     </div>
-    <div class="calc-row">
+    <div class="calc-row calc-row-hidden">
       <p class="row__title">Количество страниц</p>
       <input type="number" class="calc__input" id="count-pages">
     </div>      
@@ -45,15 +46,15 @@
       <p class="title-add">Дополнительно</p>  
     </div>    
     <div class="checbox-row"> 
-      <input type="checkbox" name="checkbox-edit" id="checkbox-edit">
+      <input class="checkbox" type="checkbox" name="checkbox-edit" id="checkbox-edit">
       <label class="calc-label" for="checkbox-edit">Возможность редактировать текст на сайте</label>
     </div>  
     <div class="checbox-row">
-      <input type="checkbox" name="checkbox-cms" id="checkbox-cms">
+      <input class="checkbox" type="checkbox" name="checkbox-cms" id="checkbox-cms">
       <label class="calc-label" for="checkbox-cms">Установка на CMS</label>
     </div>
-    <div class="calc-row">
-      <p class="title-add">Общая стоимость</p>  
+    <div class="calc-row calc-row-total">
+      <p class="title-total">Общая стоимость</p>  
       <p class="total" id="total-price">5000</p>
     </div>                
   </div>
