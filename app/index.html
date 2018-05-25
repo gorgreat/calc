@@ -20,6 +20,42 @@
     <![endif]-->
 </head>
 <body>
-
+  <div class="calc">
+    <div class="tabs">
+      <div class="tab-item  tab-item-active">Лэндинг</div>
+      <div class="tab-item">Многостраничник</div>
+    </div>
+    <div class="calc-row  calc-row-active">
+      <p class="row__title">Количество блоков</p>
+      <input type="number" class="calc__input" id="count-bloks">
+    </div>
+    <div class="calc-row">
+      <p class="row__title">Количество страниц</p>
+      <input type="number" class="calc__input" id="count-pages">
+    </div>      
+    <div class="calc-row">
+      <p class="row__title">Сколько часов на проект</p>
+      <input type="number" maxlength="2" class="calc__input" id="count-hours">
+    </div>  
+    <div class="calc-row">
+      <p class="row__title">Стоимость вашего часа</p>
+      <input type="number" maxlength="2" class="calc__input" id="count-hour">
+    </div>    
+    <div class="calc-row">
+      <p class="title-add">Дополнительно</p>  
+    </div>    
+    <div class="checbox-row"> 
+      <input type="checkbox" name="checkbox-edit" id="checkbox-edit">
+      <label class="calc-label" for="checkbox-edit">Возможность редактировать текст на сайте</label>
+    </div>  
+    <div class="checbox-row">
+      <input type="checkbox" name="checkbox-cms" id="checkbox-cms">
+      <label class="calc-label" for="checkbox-cms">Установка на CMS</label>
+    </div>
+    <div class="calc-row">
+      <p class="title-add">Общая стоимость</p>  
+      <p class="total" id="total-price">5000</p>
+    </div>                
+  </div>
 </body>
 </html>
